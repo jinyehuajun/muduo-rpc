@@ -1,0 +1,17 @@
+syntax="proto3";
+package fixbug;
+message LoginRquest
+{
+    string name=1;
+    string pwd=2;
+
+
+}
+//定义登录响应消息类型
+message LoginResponse
+{
+    int32 errorcode=1;
+    string errmsg=2;
+    bool success=3;
+    
+}
